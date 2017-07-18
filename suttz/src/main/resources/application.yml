@@ -1,0 +1,24 @@
+#服务器配置
+server:
+  port: 8008
+  tomcat:
+    uri-encoding: UTF-8
+
+#thymeleaf 相关配置 , jdbcxi
+spring:
+  thymeleaf:
+    encoding: utf-8
+    mode: LEGACYHTML5
+    content-type: text/html
+    cache: true
+    suffix: .html
+    prefix: classpath:/templates/
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/tz?useUnicode=true&characterEncoding=utf8
+    username: root
+
+
+#mybatis:
+ # mapperLocations: classpath:mapper/*.xml
+  #typeAliasesPackage: suttz_roah.pojo
